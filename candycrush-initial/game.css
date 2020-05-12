@@ -1,0 +1,176 @@
+/* Global variables */
+:root {
+	--color-light-gray: hsl(220, 10%, 85%);
+	--color-red: hsl(0, 80%, 48%);
+	--color-yellow: gold;
+	--color-green: hsl(85, 90%, 37%);
+	--color-orange: hsl(30, 100%, 50%);
+	--color-blue: hsl(210, 80%, 45%);
+	--color-purple: purple;
+	--duration-move: .1s; /* Duration to move by 1 cell */
+	--duration-fade: .4s;
+}
+
+html {
+	display: flex;
+	min-height: 100vh;
+}
+
+body {
+	margin: auto;
+}
+
+h1 {
+	font-style: bold;
+	color: hsl(210, 80%, 45%) !important;
+}
+
+button {
+	background-color: hsl(210, 80%, 45%) !important;
+	color: white !important;
+	font-style: bold;
+	border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+	background-color: #000080 !important;
+}
+
+.col-md-6, .col-md-3 {
+	padding: 0px !important;
+	margin: 5px;
+
+}
+
+.control-tb {
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.control-tb:focus {
+  outline: none;
+}
+
+.table th, .table td {
+     border: none !important;
+ }
+
+.cell {
+	padding: none;
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.cell2 {
+	padding: none;
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.cell3 {
+	padding: none;
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.cell4 {
+	padding: none;
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+	border: 1px solid black;
+}
+
+.cell-head {
+	height: 50px;
+	width: 50px;
+	margin: none !important;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+
+.candy {
+	width: 50px;
+	height: 50px;
+}
+
+
+.grid-container {
+   display: inline-grid;
+	 grid-column-gap: 50px;
+	 grid-row-gap: 50px;
+	 grid-gap: 0px;
+}
+
+.control-button {
+	width: 100px;
+	height: 50px;
+}
+
+
+.control-button-off {
+	width: 100px;
+	height: 50px;
+	background-color: gray !important;
+}
+
+.control-button-off:hover {
+	background-color: gray !important;
+}
+
+.crush-button {
+	width: 100px;
+	height: 30px;
+}
+
+
+.crush-button-off {
+	width: 100px;
+	height: 30px;
+	background-color: gray !important;
+}
+
+.crush-button-off:hover{
+	background-color: gray !important;
+}
+
+.left {
+	padding-top: 60%;
+}
+
+.row {
+	text-align: center;
+	display: inline-flex;
+}
+
+
+.board {
+	/* Variables to use in creating the board */
+	--grid-color: silver;
+	--board-size: 400px;
+	--grid-gap: 1px;
+	--cell-outer: calc(var(--board-size) / var(--size));
+	--cell: calc(var(--cell-outer) - var(--grid-gap));
+
+
+}

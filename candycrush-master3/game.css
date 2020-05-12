@@ -1,0 +1,146 @@
+/* Global variables */
+:root {
+	--color-light-gray: hsl(220, 10%, 85%);
+	--color-red: hsl(0, 80%, 48%);
+	--color-yellow: gold;
+	--color-green: hsl(85, 90%, 37%);
+	--color-orange: hsl(30, 100%, 50%);
+	--color-blue: hsl(210, 80%, 45%);
+	--color-purple: purple;
+	--duration-move: .1s; /* Duration to move by 1 cell */
+	--duration-fade: .4s;
+}
+
+html {
+	display: flex;
+	min-height: 100vh;
+}
+
+body {
+	margin: auto;
+}
+
+h1 {
+	color: #008081;
+}
+
+#controls {
+}
+
+.row {
+	text-align: center;
+}
+
+.column {
+	float:left;
+	margin: 15px;
+	max-width: 35%;
+}
+
+.candy {
+	width:100%;
+	height:100%;
+}
+
+.control-tb {
+	width: 100px;
+	height: 50px;
+	border-radius: 25%;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.control-tb:focus {
+	outline: none;
+}
+
+.control-button-on {
+	width: 100px;
+	height: 50px;
+	border-radius: 25%;
+	background-color: #008081;
+}
+
+.control-button-on:focus {
+	outline: none;
+}
+
+.control-button-off {
+	width: 100px;
+	height: 50px;
+	border-radius: 25%;
+}
+
+.cell {
+	width: 50px;
+	height: 50px;
+	border: thin solid black;
+	display: inline-block;
+	padding: none;
+}
+
+.header {
+	width: 51.6px;
+	height: 51.6px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.grid-container2 {
+	display: inline-grid;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	grid-gap: 0px;
+	float:left;
+	border: thin solid black;
+}
+
+.grid-container {
+	display: inline-grid;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	grid-gap: 0px;
+	float:left;
+}
+
+.newgame {
+	width: 100px;
+	height: 25px;
+	background-color: #008081;
+	color: white;
+	border-radius: 25%;
+}
+
+.newgame:focus {
+	outline: none;
+}
+
+.crush-on {
+	width: 100px;
+	height: 25px;
+	background-color: #008081;
+	color: white;
+	border-radius: 25%;
+}
+
+.crush-on:focus {
+	outline: none;
+}
+
+.crush-off {
+	width: 100px;
+	height: 25px;
+	color: white;
+	border-radius: 25%;
+}
+
+
+.board {
+	/* Variables to use in creating the board */
+	--grid-color: silver;
+	--board-size: 400px;
+	--grid-gap: 1px;
+	--cell-outer: calc(var(--board-size) / var(--size));
+	--cell: calc(var(--cell-outer) - var(--grid-gap));
+}
